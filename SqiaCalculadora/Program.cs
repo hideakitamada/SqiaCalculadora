@@ -31,7 +31,17 @@ builder.Services.Configure<PollySettings>(builder.Configuration.GetSection("Poll
 
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Calculadora SQIA", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo 
+    { 
+        Title = "Calculadora SQIA",
+        Description = "Teste Técnico",
+        Version = "v1",
+        Contact = new OpenApiContact
+        {
+            Name = "Hugo Tamada",
+            Email = "hideakitamada@gmail.com"
+        }
+    });
 });
 
 builder.Services.AddHttpClient("ResilientClient")
