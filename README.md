@@ -1,13 +1,13 @@
 # Calculadora de Investimentos - SQIA 📈
 
-Esta API realiza o cálculo de investimentos com indexador pós-fixado (ex: SQI), considerando dias úteis e cotações diárias. O sistema possui suporte a logs, testes automatizados e resiliência.
+Esta API realiza o cálculo de investimentos com indexador pós-fixado, considerando dias úteis e cotações diárias. O sistema possui suporte a logs, testes automatizados e resiliência.
 
 ---
 
 ## 🚀 Tecnologias Utilizadas
 
 ### 🔧 Backend
-- **.NET 7 / ASP.NET Core Web API** – Estrutura principal da aplicação
+- **.NET 8 / ASP.NET Core Web API** – Estrutura principal da aplicação
 - **C#** – Linguagem da aplicação
 - **Entity Framework Core** – ORM para acesso ao banco
 - **InMemoryDatabase** – Banco de dados em memória para testes
@@ -43,20 +43,6 @@ SqiaCalculadora/
 SqiaCalculadora.Tests/          # Testes do Projeto
 ```
 
----
-
-## 📫 Como executar
-
-```bash
-# Restaurar pacotes
-$ dotnet restore
-
-# Executar aplicação
-$ dotnet run --project SqiaCalculadora
-
-# Executar testes
-$ dotnet test
-```
 
 ---
 
